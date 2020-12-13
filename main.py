@@ -13,11 +13,13 @@ browser.get("https://login.microsoftonline.com/common/oauth2/authorize?response_
 browser.implicitly_wait(15)
 
 username = browser.find_element_by_id("i0116")
-username.send_keys("ghavtadze.sopio@students.gov.ge")
+#USERS MAIL
+username.send_keys("users mail")
 submit = browser.find_element_by_id("idSIButton9").click()
 time.sleep(5)
 password = browser.find_element_by_id("i0118")
-password.send_keys("Sopio1$")
+#USERS PASSWORD
+password.send_keys("users password$")
 submit = browser.find_element_by_id("idSIButton9").click()
 time.sleep(3)
 submit = browser.find_element_by_id("KmsiCheckboxField").click()
@@ -30,12 +32,12 @@ submit = browser.find_element_by_id("app-bar-ef56c0de-36fc-4ef8-b417-3d82ba9d073
 time.sleep(10)
 submit = browser.find_element_by_id("AAMkADJjN2ExYzk2LTIzMjUtNDM3NS1iM2I5LTNkOWE4MjA4YTViNQFRAAgI2IXUu5tAAEYAAAAATFCjDNqqQ0SVP5ZP4GKErwcABeXBK3befkeisLy2-7ePHAAAAAABDQAABeXBK3befkeisLy2-7ePHAABPa0ayQAAEA==").click()
 time.sleep(2)
-#list of lessons
-link = browser.find_element_by_link_text('English Language')
-submit = browser.find_element_by_id("id__125").click()
+#list of lessons you can change (if u have more add it)
+link = browser.find_element_by_link_text('English Language').click()
+link = browser.find_element_by_link_text('Join').click()
 time.sleep(1500)
-link = browser.find_element_by_link_text('Russian Language')
-submit = browser.find_element_by_id("id__131").click()
+link = browser.find_element_by_link_text('Russian Language').click()
+link = browser.find_element_by_link_text('Join').click()
 time.sleep(1500)
 
 
